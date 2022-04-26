@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Szegedi_Tudomanyegyetem/pti_2021_22_2/mobilalk_gyak/mobiljegy/app/src/main/res/layout-land/activity_main.xml" value="0.14858906525573193" />
+        <entry key="..\:/Szegedi_Tudomanyegyetem/pti_2021_22_2/mobilalk_gyak/mobiljegy/app/src/main/res/layout/activity_main.xml" value="0.17346014492753623" />
+        <entry key="..\:/Szegedi_Tudomanyegyetem/pti_2021_22_2/mobilalk_gyak/mobiljegy/app/src/main/res/layout/activity_register.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.29894179894179895" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.353125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
