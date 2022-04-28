@@ -17,6 +17,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
     private static final String LOG_TAG = RegisterActivity.class.getName();
     private static final String PREF_KEY = RegisterActivity.class.getPackage().toString();
+    private static final int SECRET_KEY2 = 1823453;
 
     EditText userEmailEditText;
     EditText userNameEditText;
@@ -75,16 +76,18 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         } else {
             Log.i(LOG_TAG, "Regisztrált: " + userName + ", email cím: " + userEmail + ", (" + emailType + ")"+ ", jelszó: " + password + ", jelszó megerősítése: " + passwordAgain + ". ");
         }
-
-
-
-
-
-
+        startMainSide();
     }
 
     public void cancel(View view) {
         finish();
+    }
+
+    private void startMainSide () {
+        Intent intent = new Intent(this, mainsideActivity.class);
+        intent.putExtra("SECRET_KEY2", SECRET_KEY2);
+        startActivity(intent);
+
     }
 
     @Override
