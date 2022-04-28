@@ -37,6 +37,16 @@
         app:layout_constraintVertical_bias="0.259"
         tools:layout_editor_absoluteX="0dp" />
 
+    <Spinner
+        android:id="@+id/emailSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailEditText"
+        />
+
     <EditText
         android:id="@+id/userNameEditText"
         android:layout_width="match_parent"
@@ -48,7 +58,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userEmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailSpinner"
         app:layout_constraintVertical_bias="0.226"
         tools:layout_editor_absoluteX="0dp" />
 

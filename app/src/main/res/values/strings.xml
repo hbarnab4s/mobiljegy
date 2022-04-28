@@ -7,4 +7,9 @@
     <string name="email">Email-cím</string>
     <string name="passwordagain">Jelszó megerősítése</string>
     <string name="cancel">Mégsem</string>
+    <string-array name="email_modes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Egyéb</item>
+    </string-array>
 </resources>

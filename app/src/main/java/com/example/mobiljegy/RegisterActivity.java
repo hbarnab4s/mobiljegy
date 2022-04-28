@@ -6,19 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.content.SharedPreferences;
+import android.widget.Spinner;
 
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private static final String LOG_TAG = RegisterActivity.class.getName();
-    private static final String PREF_KEY = MainActivity.class.getPackage().toString();
+    private static final String PREF_KEY = RegisterActivity.class.getPackage().toString();
 
     EditText userEmailEditText;
     EditText userNameEditText;
     EditText editText_Password;
     EditText editText_PasswordAgain;
+
+    Spinner email_spinner;
+
     private SharedPreferences preferences;
 
     @Override
@@ -31,6 +37,8 @@ public class RegisterActivity extends AppCompatActivity {
         editText_Password = findViewById(R.id.editText_Password);
         editText_PasswordAgain = findViewById(R.id.editText_PasswordAgain);
 
+        email_spinner = findViewById(R.id.emailSpinner);
+
         preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
         String userName = preferences.getString("userName", "");
         String password = preferences.getString("password", "");
@@ -38,6 +46,12 @@ public class RegisterActivity extends AppCompatActivity {
         userNameEditText.setText(userName);
         editText_Password.setText(password);
         editText_PasswordAgain.setText(password);
+
+        email_spinner.setOnItemSelectedListener(this);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.email_modes, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        email_spinner.setAdapter(adapter);
 
         Log.i(LOG_TAG, "onCreate");
 
@@ -54,12 +68,15 @@ public class RegisterActivity extends AppCompatActivity {
         String userName = userNameEditText.getText().toString();
         String password = editText_Password.getText().toString();
         String passwordAgain = editText_PasswordAgain.getText().toString();
+        String emailType = email_spinner.getSelectedItem().toString();
 
         if(!password.equals(passwordAgain)) {
             Log.e(LOG_TAG, "Nem egyezik meg a jelszó és a megerősítése!");
         } else {
-            Log.i(LOG_TAG, "Regisztrált: " + userName + ", email cím: " + userEmail + ", jelszó: " + password + ", jelszó megerősítése: " + passwordAgain + ". ");
+            Log.i(LOG_TAG, "Regisztrált: " + userName + ", email cím: " + userEmail + ", (" + emailType + ")"+ ", jelszó: " + password + ", jelszó megerősítése: " + passwordAgain + ". ");
         }
+
+
 
 
 
@@ -104,5 +121,16 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.i(LOG_TAG, "onRestart");
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        String selectedItem = adapterView.getItemAtPosition(i).toString();
+        //Log.i(LOG_TAG, selectedItem);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+        //TODO.
     }
 }
