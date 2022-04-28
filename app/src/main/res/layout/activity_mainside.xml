@@ -8,15 +8,14 @@
 
     <ImageView
         android:id="@+id/main_logo"
-        android:layout_width="398dp"
+        android:layout_width="wrap_content"
         android:layout_height="237dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="4dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mobiljegy_logo" />
 
     <LinearLayout
+        android:id="@+id/lane30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -40,7 +39,206 @@
             android:textSize="24sp"
             tools:ignore="MissingConstraints" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginStart="50dp"
+            />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lane50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lane30">
+
+        <ImageView
+            android:id="@+id/little_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mobiljegy_logologo" />
+
+        <TextView
+            android:id="@+id/_30km_lane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 km-es sáv"
+            android:textColor="#0E9314"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginStart="50dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lane80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lane50">
+
+        <ImageView
+            android:id="@+id/little_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mobiljegy_logologo" />
+
+        <TextView
+            android:id="@+id/_30km_lane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 km-es sáv"
+            android:textColor="#0E9314"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginStart="50dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lane100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lane80">
+
+        <ImageView
+            android:id="@+id/little_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mobiljegy_logologo" />
+
+        <TextView
+            android:id="@+id/_30km_lane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 km-es sáv"
+            android:textColor="#0E9314"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="40dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lane150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lane100">
+
+        <ImageView
+            android:id="@+id/little_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mobiljegy_logologo" />
+
+        <TextView
+            android:id="@+id/_30km_lane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150 km-es sáv"
+            android:textColor="#0E9314"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginStart="40dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lane200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lane150">
+
+        <ImageView
+            android:id="@+id/little_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mobiljegy_logologo" />
+
+        <TextView
+            android:id="@+id/_30km_lane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200 km-es sáv"
+            android:textColor="#0E9314"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginStart="40dp"
+            />
     </LinearLayout>
 
 
