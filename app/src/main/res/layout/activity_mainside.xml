@@ -6,16 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".mainsideActivity">
 
-    <ImageView
-        android:id="@+id/main_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="237dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mobiljegy_logo" />
 
     <LinearLayout
-        android:id="@+id/lane30"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -25,10 +18,37 @@
         app:layout_constraintTop_toBottomOf="@+id/main_logo">
 
         <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="170dp"
+            android:layout_height="131dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ticketicon" />
+        <TextView
+            android:id="@+id/mobiljegy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobiljegy vásárlás"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lane30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <ImageView
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"
@@ -37,7 +57,10 @@
             android:text="30 km-es sáv"
             android:textColor="#0E9314"
             android:textSize="24sp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobiljegy_title"
+            />
 
         <ImageView
             android:id="@+id/imageView"
@@ -66,7 +89,7 @@
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"
@@ -104,7 +127,7 @@
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"
@@ -142,7 +165,7 @@
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"
@@ -180,7 +203,7 @@
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"
@@ -219,7 +242,7 @@
             android:id="@+id/little_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/mobiljegy_logologo" />
+            app:srcCompat="@drawable/ticketicon" />
 
         <TextView
             android:id="@+id/_30km_lane"

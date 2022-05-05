@@ -1,5 +1,6 @@
 package com.example.mobiljegy;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,13 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.content.SharedPreferences;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 
 
 public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -27,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
     Spinner email_spinner;
 
     private SharedPreferences preferences;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +63,8 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         email_spinner.setAdapter(adapter);
 
+        mAuth = FirebaseAuth.getInstance();
+
         Log.i(LOG_TAG, "onCreate");
 
         Bundle bundle = getIntent().getExtras();
@@ -76,7 +87,20 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         } else {
             Log.i(LOG_TAG, "Regisztrált: " + userName + ", email cím: " + userEmail + ", (" + emailType + ")"+ ", jelszó: " + password + ", jelszó megerősítése: " + passwordAgain + ". ");
         }
-        startMainSide();
+        //startMainSide();
+
+        mAuth.createUserWithEmailAndPassword(userEmail, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()) {
+                    Log.d(LOG_TAG, "User created succesfully");
+                    startMainSide();
+                } else {
+                    Log.d(LOG_TAG, "User was not created succesfully");
+                    Toast.makeText(RegisterActivity.this, "User was not created succesfully: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     public void cancel(View view) {
@@ -85,7 +109,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
     private void startMainSide () {
         Intent intent = new Intent(this, mainsideActivity.class);
-        intent.putExtra("SECRET_KEY2", SECRET_KEY2);
+        //intent.putExtra("SECRET_KEY2", SECRET_KEY2);
         startActivity(intent);
 
     }

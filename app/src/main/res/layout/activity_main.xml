@@ -63,33 +63,20 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Password"
         app:layout_constraintVertical_bias="0.076" />
 
-    <Button
-        android:id="@+id/loginButtonAnonymus"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="login"
-        android:text="@string/login_anonymus"
-        app:backgroundTint="#0E9314"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.065" />
 
     <Button
         android:id="@+id/loginButtonGoogle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="login"
+        android:onClick="loginWithGoogle"
         android:text="@string/loginGoogle"
         app:backgroundTint="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButtonAnonymus"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.073" />
 
     <Button
         android:id="@+id/registerButton"
@@ -103,6 +90,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButtonGoogle"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.097" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
