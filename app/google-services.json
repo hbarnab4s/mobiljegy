@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "845515264536",
+    "project_id": "androidmobiljegy",
+    "storage_bucket": "androidmobiljegy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845515264536:android:eb03e95cb93576cdc3e96d",
+        "android_client_info": {
+          "package_name": "com.example.mobiljegy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845515264536-e6a7ec7jtsr8rjem63t3k7bb01d3gq7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobiljegy",
+            "certificate_hash": "4380f2003386036ad67622e908834cbb41db6047"
+          }
+        },
+        {
+          "client_id": "845515264536-85ondts48klccnr8rbgmianql1rqm2a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR5e65UQSuocRPuh_j6XSfZOj9k-VBhNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845515264536-85ondts48klccnr8rbgmianql1rqm2a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
