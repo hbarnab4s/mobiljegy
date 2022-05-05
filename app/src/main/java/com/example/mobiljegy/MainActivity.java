@@ -42,12 +42,21 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i(LOG_TAG, "Bejelentkezett: " + userName + ", jelszó: " + password + ". ");
 
+        startMainSide();
+
     }
 
     public void register(View view) {
         Intent intent =  new Intent(this, RegisterActivity.class);
         intent.putExtra("SECRET_KEY", 1823453);
         startActivity(intent);
+    }
+
+    private void startMainSide () {
+        Intent intent = new Intent(this, mainsideActivity.class);
+        intent.putExtra("SECRET_KEY", SECRET_KEY);
+        startActivity(intent);
+
     }
 
     @Override
