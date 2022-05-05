@@ -11,30 +11,62 @@
         android:id="@+id/editText_UserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="text"
-        android:layout_marginTop="50dp"
-        />
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editText_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
-        android:layout_marginTop="50dp"
-        android:inputType="textPassword"
-        />
+        android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="login"
-        android:text="@string/login"
-        android:layout_marginTop="50dp"
-        app:backgroundTint="#0E9314"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Password">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:onClick="login"
+            android:text="@string/login"
+            app:backgroundTint="#0E9314" />
+
+        <Button
+            android:id="@+id/loginButtonGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="70dp"
+            android:onClick="loginWithGoogle"
+            android:text="@string/loginGoogle"
+            app:backgroundTint="#FF0000" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="69dp"
+            android:onClick="register"
+            android:text="@string/register"
+            app:backgroundTint="#0E9314" />
+
+    </LinearLayout>
+
 </LinearLayout>
+
