@@ -10,6 +10,8 @@
     <string name="login_anonymus">Bejenlentkezés vendégként</string>
     <string name="loginGoogle">Bejelentkezés Google fiókkal</string>
     <string name="buying">Vásárlás</string>
+    <string name="item_placeholder">Leírás</string>
+    <string name="price_placeholder">Ár</string>
     <string-array name="email_modes">
         <item>Otthoni</item>
         <item>Munkahelyi</item>
@@ -72,6 +74,29 @@
 
 
     <array name="ticket_item_images">
+        <item>@drawable/ticketicon450</item>
+        <item>@drawable/ticketicon400</item>
+        <item>@drawable/ticketicon350</item>
+        <item>@drawable/ticketicon300</item>
+        <item>@drawable/ticketicon280</item>
+        <item>@drawable/ticketicon260</item>
+        <item>@drawable/ticketicon240</item>
+        <item>@drawable/ticketicon220</item>
+        <item>@drawable/ticketicon200</item>
+        <item>@drawable/ticketicon180</item>
+        <item>@drawable/ticketicon160</item>
+        <item>@drawable/ticketicon140</item>
+        <item>@drawable/ticketicon120</item>
+        <item>@drawable/ticketicon100</item>
+        <item>@drawable/ticketicon90</item>
+        <item>@drawable/ticketicon80</item>
+        <item>@drawable/ticketicon70</item>
+        <item>@drawable/ticketicon60</item>
+        <item>@drawable/ticketicon50</item>
+        <item>@drawable/ticketicon40</item>
+        <item>@drawable/ticketicon30</item>
+        <item>@drawable/ticketicon20</item>
+        <item>@drawable/ticketicon10</item>
         <item>@drawable/ticketicon</item>
     </array>
 </resources>

@@ -57,10 +57,11 @@ public class mainsideActivity extends AppCompatActivity {
         mItemList.clear();
 
         for(int i = 0; i < itemList.length; i++) {
-            mItemList.add(new TicketItem(itemList[i], itemPrice[i], itemsImageResource.getResourceId(0, 0)));
+            mItemList.add(new TicketItem(itemList[i], itemPrice[i], itemsImageResource.getResourceId(i, 0)));
         }
 
         itemsImageResource.recycle();
+
         mAdapter.notifyDataSetChanged();
     }
 }

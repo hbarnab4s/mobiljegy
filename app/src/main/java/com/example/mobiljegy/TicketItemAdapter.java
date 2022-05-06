@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -41,6 +43,12 @@ public class TicketItemAdapter extends RecyclerView.Adapter<TicketItemAdapter.Vi
         TicketItem currentItem = mTicketItemsData.get(position);
 
         holder.bindTo(currentItem);
+
+        if(holder.getAdapterPosition() > lastPosition) {
+            Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.slide_in_row);
+            holder.itemView.startAnimation(animation);
+            lastPosition = holder.getAdapterPosition();
+        }
     }
 
     @Override
@@ -95,9 +103,9 @@ public class TicketItemAdapter extends RecyclerView.Adapter<TicketItemAdapter.Vi
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            TextView mTitleText = itemView.findViewById(R.id.itemTitle);
-            TextView mPriceText = itemView.findViewById(R.id.price);
-            ImageView mItemImage = itemView.findViewById(R.id.iconImage);
+             mTitleText = itemView.findViewById(R.id.itemTitle);
+             mPriceText = itemView.findViewById(R.id.price);
+             mItemImage = itemView.findViewById(R.id.iconImage);
 
             itemView.findViewById(R.id.buy).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -109,7 +117,7 @@ public class TicketItemAdapter extends RecyclerView.Adapter<TicketItemAdapter.Vi
 
         public void bindTo(TicketItem currentItem) {
             mTitleText.setText(currentItem.getName());
-            mPriceText.setText(currentItem.getName());
+            mPriceText.setText(currentItem.getPrice());
 
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
 
