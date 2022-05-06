@@ -9,9 +9,69 @@
     <string name="cancel">Mégsem</string>
     <string name="login_anonymus">Bejenlentkezés vendégként</string>
     <string name="loginGoogle">Bejelentkezés Google fiókkal</string>
+    <string name="buying">Vásárlás</string>
     <string-array name="email_modes">
         <item>Otthoni</item>
         <item>Munkahelyi</item>
         <item>Egyéb</item>
     </string-array>
+
+    <string-array name="ticket_item_names">
+        <item>Helyközi menetjegy 450 km</item>
+        <item>Helyközi menetjegy 400 km</item>
+        <item>Helyközi menetjegy 350 km</item>
+        <item>Helyközi menetjegy 300 km</item>
+        <item>Helyközi menetjegy 280 km</item>
+        <item>Helyközi menetjegy 260 km</item>
+        <item>Helyközi menetjegy 240 km</item>
+        <item>Helyközi menetjegy 220 km</item>
+        <item>Helyközi menetjegy 200 km</item>
+        <item>Helyközi menetjegy 180 km</item>
+        <item>Helyközi menetjegy 160 km</item>
+        <item>Helyközi menetjegy 140 km</item>
+        <item>Helyközi menetjegy 120 km</item>
+        <item>Helyközi menetjegy 100 km</item>
+        <item>Helyközi menetjegy 90 km</item>
+        <item>Helyközi menetjegy 80 km</item>
+        <item>Helyközi menetjegy 70 km</item>
+        <item>Helyközi menetjegy 60 km</item>
+        <item>Helyközi menetjegy 50 km</item>
+        <item>Helyközi menetjegy 40 km</item>
+        <item>Helyközi menetjegy 30 km</item>
+        <item>Helyközi menetjegy 20 km</item>
+        <item>Helyközi menetjegy 10 km</item>
+        <item>Menetjegy városi közlekedéshez</item>
+    </string-array>
+
+    <array name="ticket_item_price">
+        <item>2822 Cr</item>
+        <item>2660 Cr</item>
+        <item>2451 Cr</item>
+        <item>2214 Cr</item>
+        <item>2109 Cr</item>
+        <item>1995 Cr</item>
+        <item>1881 Cr</item>
+        <item>1758 Cr</item>
+        <item>1625 Cr</item>
+        <item>1492 Cr</item>
+        <item>1349 Cr</item>
+        <item>1197 Cr</item>
+        <item>1045 Cr</item>
+        <item>884 Cr</item>
+        <item>798 Cr</item>
+        <item>708 Cr</item>
+        <item>618 Cr</item>
+        <item>532 Cr</item>
+        <item>442 Cr</item>
+        <item>356 Cr</item>
+        <item>266 Cr</item>
+        <item>176 Cr</item>
+        <item>119 Cr</item>
+        <item>280 Cr</item>
+    </array>
+
+
+    <array name="ticket_item_images">
+        <item>@drawable/ticketicon</item>
+    </array>
 </resources>
